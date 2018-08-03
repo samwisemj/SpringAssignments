@@ -1,0 +1,14 @@
+package com.cg.factory;
+
+import java.util.ResourceBundle;
+
+import com.cg.renderer.MessageRenderer;
+
+public class MessageFactory {
+	
+	public static MessageRenderer getMessageRenderer()
+	{
+		ResourceBundle bundle=ResourceBundle.getBundle("context");
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.cg.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.cg.bean.Employee;
+
+public class EmployeeController {
+
+	EmployeeService services;
+	public void addEmployee(Map<String, String> emp) {
+		service.addEmployee(emp);
+	}
+
+	public HashMap<Integer, Employee> viewAllEmp() {
+		return service.viewAllEmp();
+	}
+
+	public Employee getEmployeeById(int id) {
+		return service.getEmployeeById(id);
+	}
+
+	public void deleteEmployee(int id) {
+		service.deleteEmployee(id);
+	}
+}

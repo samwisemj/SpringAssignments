@@ -1,0 +1,10 @@
+import com.cg.ui.UIEmployee;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		new UIEmployee().start();
+
+	}
+
+}

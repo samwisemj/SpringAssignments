@@ -1,0 +1,14 @@
+package com.cg.dao;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.cg.bean.*;
+public class EmployeeDAO {
+
+	HashMap<int,Employee> employees;
+	
+	public void addEmployee(Map<String,String> emp)
+	{
+		
+	}
+}

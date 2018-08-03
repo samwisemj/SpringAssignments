@@ -1,0 +1,19 @@
+package com.cg.renderer;
+
+import com.cg.provider.MessasgeProvider;
+
+public class ConsoleRenderer implements  MessageRenderer {
+
+	MessasgeProvider provider;
+	@Override
+	public void setMessageProvider(MessasgeProvider provider) {
+		this.provider=provider;
+		
+	}
+
+	@Override
+	public void render() {
+		System.out.println(provider.getMessage());
+		
+	}	
+}

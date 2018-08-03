@@ -1,0 +1,20 @@
+package com.cg.renderer;
+
+import com.cg.provider.MessasgeProvider;
+
+public class PDFRenderer implements MessageRenderer{
+
+	MessasgeProvider provider;
+	@Override
+	public void render() {
+		System.out.println(provider.getMessage()+" on PDF :D");
+		
+	}
+	@Override
+	public void setMessageProvider(MessasgeProvider provider) {
+		this.provider=provider;
+		
+	}
+	
+	
+}

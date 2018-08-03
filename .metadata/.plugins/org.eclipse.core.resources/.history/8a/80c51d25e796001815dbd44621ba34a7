@@ -1,0 +1,7 @@
+package com.cg.renderer;
+
+public interface MessageRenderer {
+
+	void setMessageProvider(Message provider);
+	void render();
+}

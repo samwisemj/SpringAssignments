@@ -1,0 +1,17 @@
+package com.cg.ui;
+
+public class UIEmployee {
+
+	Map<String,String>
+	public void start()
+	{
+		accept();
+	}
+
+	private void accept() {
+		do
+		{
+			
+		}
+	}
+}

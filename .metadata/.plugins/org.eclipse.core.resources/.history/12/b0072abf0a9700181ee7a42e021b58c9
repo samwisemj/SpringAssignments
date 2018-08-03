@@ -1,0 +1,22 @@
+package com.cg.ui;
+
+import java.util.Map;
+
+public class UIEmployee {
+
+	Map<String,String> emp;
+	
+	public void start()
+	{
+		emp=new HashMap<>();
+		
+		accept();
+	}
+
+	private void accept() {
+		do
+		{
+			
+		}
+	}
+}
