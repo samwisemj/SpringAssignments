@@ -9,7 +9,11 @@ public class EmployeeDAO {
 
 	HashMap<Integer, Employee> employees = new HashMap<>();
 
+<<<<<<< HEAD:SpringDependencyInjectionDemo/src/com/cg/dao/EmployeeDAO.java
 	public void addEmployee(HashMap<String, String> emp) {
+=======
+	public void addEmployee(Map<String, String> emp) {
+>>>>>>> 861e3173b206a111266002ae21918d8f9539118c:SpringDIinLayeredArchitecture/src/com/cg/dao/EmployeeDAO.java
 		
 		Employee e = new Employee(Integer.parseInt(emp.get("id")), emp.get("name"));
 		
