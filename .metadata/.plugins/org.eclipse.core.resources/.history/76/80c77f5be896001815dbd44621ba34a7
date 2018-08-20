@@ -1,9 +1,0 @@
-package com.cg.factory;
-
-public class MessageFactory {
-	public static MessageRenderer getMessageRenderer()
-	{
-		
-	}
-
-}

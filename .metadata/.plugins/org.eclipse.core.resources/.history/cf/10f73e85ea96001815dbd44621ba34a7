@@ -1,2 +1,0 @@
-renderer=com.cg.renderer.PDFMessageRenderer
-provider=com.cg.provider.GMMessageProvider

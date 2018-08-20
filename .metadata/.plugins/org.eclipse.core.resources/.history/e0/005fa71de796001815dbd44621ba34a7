@@ -1,6 +1,0 @@
-package com.cg.renderer;
-
-public interface MessageRenderer {
-
-	void render();
-}

@@ -1,2 +1,0 @@
-renderer=com.cg.renderer.PDFRenderer
-provider=com.cg.provider.HWMessageProvider
