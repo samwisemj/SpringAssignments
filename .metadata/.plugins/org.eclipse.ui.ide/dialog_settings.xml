@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="B:\backup\Codes, IDES\Assignments Capgemini\SpringAssignments\01_CustomerRestfulService_with_jpa_swagger"/>
+		<item value="B:\backup\Codes, IDES\Assignments Capgemini\SpringAssignments\01_CustomerRestfulService_jpa_swagger"/>
 		<item value="B:\backup\Codes, IDES\Assignments Capgemini\SpringAssignments\CustomerRestfulService"/>
 		<item value="B:\backup\Codes, IDES\Assignments Capgemini\SpringAssignments\Important SpringData files"/>
 		<item value="B:\backup\Codes, IDES\Assignments Capgemini\SpringAssignments\SpringDependencyInjectionDemo\src"/>

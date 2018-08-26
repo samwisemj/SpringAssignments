@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="CustomerRestfulService"/>
 <aop-project name="SpringDemo"/>
 <aop-project name="ems"/>
+<aop-project name="01_CustomerRestfulService_with_jpa_swagger"/>
 </aop-reference-model>

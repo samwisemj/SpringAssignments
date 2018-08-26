@@ -15,7 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Customer.CustomerRestfulService.pojo.Customer;
 import com.Customer.CustomerRestfulService.service.CustomerService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @RestController
+@RequestMapping(value = "/customers")
+
+@Api(value="Operations pertaining to customers")
 public class CustomerController {
 
 	@Autowired
@@ -25,16 +31,18 @@ public class CustomerController {
 		// TODO Auto-generated constructor stub
 	}
 
+	@ApiOperation(value = "Add a new Customer")
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public void add(int id, String name, String address) {
 		service.add(id, name, address);
 	}
-	
+	@ApiOperation(value = "Update an existing customer")
 	@RequestMapping(value = "/update", method = RequestMethod.PUT)
 	public void update(int id, String name, String address) {
 		service.update(id, name, address);
 	}
 
+	@ApiOperation(value = "View a list of available Customers")
 	@RequestMapping(value = "/viewAll", method = RequestMethod.GET)
 	public Resources<Customer> viewAl() {
 		Resources<Customer> resources=new Resources<>(service.viewAl());
@@ -45,12 +53,14 @@ public class CustomerController {
 	
 	}
 
+	@ApiOperation(value = "Delete an existing customer")
 	@RequestMapping(value = "/delete", method = RequestMethod.DELETE)
 	public ResponseEntity<String> delete(@RequestParam(value="id")int id) {
 		service.delete(id);
 		return new ResponseEntity<String>("Deleted entity",new HttpHeaders(),HttpStatus.OK);
 	}
 
+	@ApiOperation(value = "Get customer details by Customer Id")
 	@RequestMapping(value="/getById",method=RequestMethod.GET/*,produces=MediaType.ALL_VALUE*/)
 	public Resource<Customer> getById(int id)
 	{
